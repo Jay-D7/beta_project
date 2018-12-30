@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
-var bootstrap = require('bootstrap');
 
 gulp.task("jsErrorHint", function() {
     console.log("WorksFine");
