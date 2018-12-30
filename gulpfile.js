@@ -4,9 +4,10 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
+var bootstrap = require('bootstrap');
 
-gulp.task("driving", function() {
-    console.log("I'm driving");
+gulp.task("jsErrorHint", function() {
+    console.log("WorksFine");
     return gulp.src("js/*.js")
             .pipe(jshint())
             .pipe(jshint.reporter("default"));
@@ -27,4 +28,5 @@ gulp.task("sass", function() {
 
 gulp.task("watch", function() {
     gulp.watch("scss/*scss", gulp.series("sass"));
+    gulp.watch("js/*.js", gulp.series("jsErrorHint"));
 });
