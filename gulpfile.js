@@ -13,7 +13,7 @@ gulp.task("jsErrorHint", function() {
 });
 
 gulp.task("sass", function() {
-    console.log("Działam i mam się dobrze ;)");
+    console.log("I'm working fine boss ;)");
     return gulp.src("scss/*.scss")
            .pipe(sourcemaps.init())
            .pipe(sass({
