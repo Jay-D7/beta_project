@@ -1,9 +1,9 @@
 
 
-var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var sass = require("gulp-sass");
-var sourcemaps = require("gulp-sourcemaps");
+var gulp = require('gulp'),
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("jsErrorHint", function() {
     console.log("WorksFine");
@@ -25,7 +25,10 @@ gulp.task("sass", function() {
            .pipe(gulp.dest("css"));
 });
 
-gulp.task("watch", function() {
-    gulp.watch("scss/*scss", gulp.series("sass"));
-    gulp.watch("js/*.js", gulp.series("jsErrorHint"));
+gulp.task('watch', function() {
+    gulp.watch('scss/*scss', gulp.series('sass'));
+    gulp.watch('js/*.js', gulp.series('jsErrorHint'));
 });
+
+
+ 
