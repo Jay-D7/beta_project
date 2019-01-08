@@ -39,7 +39,7 @@
 
 //background-opacity
 @mixin bg-opacity($color, $opacity) {
-  background-color: $color !important;
-  background: rgba($color, $opacity) !important;
+  background-color: $color;
+  background: rgba($color, $opacity);
 }
 
