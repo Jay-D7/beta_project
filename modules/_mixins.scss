@@ -1,5 +1,12 @@
 
 
+//Text-shadow
+@mixin box-shadow($border-gold) {
+    box-shadow: $border-gold;
+    -webkit-box-shadow: $border-gold;
+    -moz-box-shadow: $border-gold;
+ }
+
 //Radius
 @mixin radius($size) {
     border-radius: $size;
