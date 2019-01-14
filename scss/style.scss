@@ -48,7 +48,7 @@ header {
 
 section.first-view {
     width: 100%;
-    height: 640px;
+    height: 850px;
     text-align: center;
     background: url('../images/yokohama.jpg');
     background-position: center;
@@ -59,27 +59,28 @@ section.first-view {
     transition: all 0.5s;
     @include box-shadow($border-gold);
     
-    
-    h1 {
-        padding: $primary-padding;
-        font-size: $big-title;
-        color: $basic;
-    }
-  
-    p {
-        padding: $secondary-padding;
-        font-size: $standard-p;
-        color: lighten($basic, 10%);
-    }
-    
-    button {
-        a {
-            &:hover {
-                text-decoration: none;
+    .header-content {
+        padding: $big-padding-top;
+        
+        h1 {
+            font-size: $big-title;
+            color: $basic;
+        }
+
+        p {
+            padding: $secondary-padding-top;
+            font-size: $standard-p;
+            color: lighten($basic, 10%);
+        }
+
+        button {
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }
-    
 }
 
     /*SECTION SECOND*/
@@ -88,13 +89,13 @@ section.little-history {
     text-align: center;
     
     h1 {
-        padding: $primary-padding;
+        padding: $big-padding-top;
         font-size: $small-title;
         color: $basic;
     }
     
     p {
-        padding: $secondary-padding;
+        padding: $secondary-padding-top;
         font-size: $standard-p;
         color: $basic;
     }
