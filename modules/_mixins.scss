@@ -1,5 +1,88 @@
 
 
+/*swing*/
+
+@-webkit-keyframes swing {
+    15%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-2px);
+       transform: translateX(-2px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-2px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/*pulse*/
+
+@keyframes pound {
+	from { transform: none; }
+	50% { transform: scale(1.4); }
+	to { transform: none; }
+}
+
+@-webkit-keyframes pound {
+	from { -webkit-transform: none; }
+	50% { -webkit-transform: scale(1.4); }
+	to { -webkit-transform: none; }
+}
+
+
 //Text-shadow
 @mixin box-shadow($border-gold) {
     box-shadow: $border-gold;

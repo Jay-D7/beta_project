@@ -9,7 +9,25 @@ html {
 }
 
 body {
-  background-color: $bg-color;
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+        outline: 0;
+        outline-offset: 0;
+    }
 }
 
     /*HEADER*/
@@ -26,22 +44,34 @@ header {
 
     nav.menu {
         float: right;
-        margin: 45px;
+        margin: 45px 0;
 
         ul {
             li {
                 display: inline-block;
+                padding: 0 10px;
+                font-size: 15px;
+                
+                &:hover{
+                    -webkit-animation: swing 1s ease; 
+                    animation: swing 1s ease;
+                    -webkit-animation-iteration-count: 0.5;
+                    animation-iteration-count: 0.5;
+                }
                 
                 a {
                     color: $orange;
+                    transition: all 0.5s; 
+                    font-weight: 600;
                     
                     &:hover {
                         text-decoration: none; 
+                        transition: all 0.5s; 
                     }
                 }  
            }
         }
-    }   
+    }
 }
 
     /*SECTION FIRST*/
@@ -54,13 +84,13 @@ section.first-view {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0 155px 0;
+    padding: $header-padding;
     opacity: 0.6;
     transition: all 0.5s;
     @include box-shadow($border-gold);
     
     .header-content {
-        padding: $big-padding-top;
+        margin: $big-margin-top;
         
         h1 {
             font-size: $big-title;
@@ -68,13 +98,32 @@ section.first-view {
         }
 
         p {
-            padding: $secondary-padding-top;
+            margin: $secondary-margin-top;
             font-size: $standard-p;
             color: lighten($basic, 10%);
         }
 
         button {
+            margin: $primary-margin-top;
+            width: 200px;    
+            max-width: 80%;
+            padding: 12px 0;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: $orange;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.5s;
+            
+            &:hover {
+                background-color: darken( $orange, 15% );
+                transition: all 0.5s;
+            }
+            
             a {
+                padding: 10px 0px;
+                color: $primary-color;
+                
                 &:hover {
                     text-decoration: none;
                 }
@@ -83,21 +132,31 @@ section.first-view {
     }
 }
 
+
     /*SECTION SECOND*/
 
 section.little-history {
+    margin: $open-section-margin;
     text-align: center;
     
-    h1 {
-        padding: $big-padding-top;
-        font-size: $small-title;
-        color: $basic;
-    }
-    
-    p {
-        padding: $secondary-padding-top;
-        font-size: $standard-p;
-        color: $basic;
-    }
+        h1 {
+            font-size: $small-title;
+            color: $basic;
+        }
+
+        p {
+            /*margin: $secondary-margin-top;*/
+            font-size: $standard-p;
+            color: $basic;
+        }
         
+        .history-image {
+            display: inline-block;
+            margin: 10px; /*Build*/
+                
+        
+            img[data-history] {
+                display: inline-block;
+            }
+        } 
 }
