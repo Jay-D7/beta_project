@@ -84,8 +84,8 @@ section.first-view {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: $header-padding;
-    opacity: 0.6;
+    padding: $open-section-padding;
+    /*opacity: 0.6;*/
     transition: all 0.5s;
     @include box-shadow($border-gold);
     
@@ -136,8 +136,9 @@ section.first-view {
     /*SECTION SECOND*/
 
 section.little-history {
-    margin: $open-section-margin;
+    padding: $open-section-padding;
     text-align: center;
+    @include box-shadow($border-gold);
     
         h1 {
             font-size: $small-title;
@@ -159,4 +160,194 @@ section.little-history {
                 display: inline-block;
             }
         } 
+}
+
+section.plan {
+    padding: $open-section-padding;
+    text-align: center;
+    
+    .price_list {
+        margin: 50px 0 54px 0px;
+    }
+    
+    .options {
+        /*display: inline-block;*/
+        display: flex;
+        justify-content: space-around;
+
+        .option {
+            width: 329px;
+            height: 500px;
+            background-color: #f9f9f9;
+            border: 1px solid #c2c2c2;
+            position: relative;
+            /*display: inline-block;*/
+        
+
+            .circle {
+               width: 50px;
+               height: 50px;
+               border:1px solid #c2c2c2;
+               border-radius: 50%;
+               position: absolute;
+               left: 0;
+               top: -30px;
+               right: 0;
+               margin: auto;
+               background-color: #fff;
+               
+                .dot {
+                    width: 25px;
+                    height: 25px;
+                    background-color: $orange;
+                    border-radius: 50%;
+                    margin: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .option-h1 {
+                font-size: 24px;
+                text-align: center;
+                color: $orange;
+                text-transform: uppercase;
+                padding-top: 5px;
+                letter-spacing: -1px;
+            }
+
+            .price {
+                width: 120px;
+                height: 120px;
+                border: 1px solid #c2c2c2;
+                border-radius: 50%;
+                background-color: #fff;
+                margin: 0 auto;
+                position: relative;
+                
+                .amount {
+                    font-size: 45px;
+                    font-weight: 600;
+                    color: #c4c4c4;
+                    margin: 18px 0 0px 15px;
+                    
+                    sub {
+                        font-size: 52px;
+                    }
+
+                    sup {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+
+                .month {
+                    position: absolute;
+                    right: 26px;
+                    bottom: 20px;
+                    margin: 0 auto;
+                    font-size: 14px !important;
+                    font-weight: 600;
+                    color: #c4c4c4;
+                    text-transform: uppercase;
+                }
+            }
+
+            .plan-list {
+                width: 100%;
+                margin: 30px 0 0px 0;
+                padding: 0;
+                font-size: 22px;
+                text-align: center;
+                color: #747474;
+                background-color: #f1f1f1;
+                list-style-type: none;
+                line-height: 50px;
+            }
+
+            .plan-list li:nth-of-type(2n + 1) {
+                background-color: #e4e4e4;
+            }
+
+            .option-button {
+                position: absolute;
+                /* top: 0; */
+                right: 0;
+                left: 0;
+                bottom: 20px;
+                width: 120px;
+                height: 40px;
+                margin: auto;
+                /*font-family: 'ralewayregular', Sans Serif;*/
+                font-size: 16px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-align: center;
+                background-color: $orange;
+                border: none;
+                border-radius: 10px;
+
+            }
+
+/*            .ver1 {
+                margin: 30px 0 70px 0;
+            }
+
+            .ver2 {
+                margin: 30px 0 20px 0;
+            }*/
+
+            &:hover {
+                background-color: $orange;
+                color: #000000;
+                transition: background-color linear 0.5s;
+                
+                .option-h1 {
+                    background-color: $orange;
+                    color: #FFFFFF;
+                    transition: background-color linear 2s;
+                }
+                
+                .circle {
+                    background-color: $orange;
+                    border: none;
+                    transition: background-color linear 0.5s;
+                }
+
+                .dot {
+                    background-color: #FFFFFF;
+                }
+
+                .amount {
+                    color: $orange;
+                }
+                .month {
+                    color: $orange;
+                }
+
+                .plan-list {
+                    background-color: #e4e4e4;
+                }
+
+                .plan-list li:nth-of-type(2n + 1) {
+                    background-color: #f1f1f1 !important;
+                    color: #acacac;
+                }
+
+                .option-button {
+                    background-color: #000000;
+                    color: $orange;
+                    transition: background-color linear 0.3s;
+
+                    &:hover {
+                        background-color: #ffffff !important;
+                        transition: background-color linear 0.3s;
+                    }
+                }
+            }
+        }
+    }
 }
