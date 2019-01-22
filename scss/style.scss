@@ -12,6 +12,10 @@ body {
     background-color: $bg-color;
 }
 
+h1 {
+    color: $basic;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -94,7 +98,6 @@ section.first-view {
         
         h1 {
             font-size: $big-title;
-            color: $basic;
         }
 
         p {
@@ -140,38 +143,48 @@ section.little-history {
     text-align: center;
     @include box-shadow($border-gold);
     
-        h1 {
-            font-size: $small-title;
-            color: $basic;
-        }
+    h1 {
+        font-size: $small-title;
+    }
 
-        p {
-            margin: $primary-margin-top-bottom;
-            font-size: $standard-p;
-            color: $basic;
-        }
+    p {
+        margin: $primary-margin-top-bottom;
+        font-size: $standard-p;
+        color: $basic;
+    }
         
-        .history-image {
+    .history-image {
+        display: inline-block;
+        margin: 10px; /*Build*/
+
+        img[data-history] {
             display: inline-block;
-            margin: 10px; /*Build*/
-                
-        
-            img[data-history] {
-                display: inline-block;
-            }
-        } 
+        }
+    } 
 }
 
 section.plan {
+    
     padding: $open-section-padding;
     text-align: center;
+    @include box-shadow($border-gold);
+    
+    h1 {
+        font-size: $small-title;
+    }
+    
+    p {
+        margin: $secondary-margin-top-bottom;
+        font-size: $standard-p;
+        color: $basic;
+    }
+    
     
     .price_list {
         margin: 50px 0 54px 0px;
     }
     
     .options {
-        /*display: inline-block;*/
         display: flex;
         justify-content: space-around;
 
@@ -181,8 +194,7 @@ section.plan {
             background-color: #f9f9f9;
             border: 1px solid #c2c2c2;
             position: relative;
-            /*display: inline-block;*/
-        
+            border-radius: 25px;
 
             .circle {
                width: 50px;
@@ -292,21 +304,13 @@ section.plan {
 
             }
 
-/*            .ver1 {
-                margin: 30px 0 70px 0;
-            }
-
-            .ver2 {
-                margin: 30px 0 20px 0;
-            }*/
-
             &:hover {
                 background-color: $orange;
                 color: #000000;
                 transition: background-color linear 0.5s;
                 
                 .option-h1 {
-                    background-color: $orange;
+                    /*background-color: $orange;*/
                     color: #FFFFFF;
                     transition: background-color linear 2s;
                 }
@@ -350,4 +354,37 @@ section.plan {
             }
         }
     }
+}
+
+.test {
+    background: aliceblue;
+    
+    i {  
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px; 
+    }
+    
+    .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+    
+    
 }
