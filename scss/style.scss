@@ -47,8 +47,12 @@ header {
     }
 
     nav.menu {
-        float: right;
+        /*float: right;*/
         margin: 45px 0;
+        
+            display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 
         ul {
             li {
@@ -57,10 +61,10 @@ header {
                 font-size: 15px;
                 
                 &:hover{
-                    -webkit-animation: swing 1s ease; 
                     animation: swing 1s ease;
-                    -webkit-animation-iteration-count: 0.5;
+                    -webkit-animation: swing 1s ease; 
                     animation-iteration-count: 0.5;
+                    -webkit-animation-iteration-count: 0.5;
                 }
                 
                 a {
@@ -191,7 +195,8 @@ section.plan {
         .option {
             width: 329px;
             height: 500px;
-            background-color: #f9f9f9;
+            /*background-color: #f9f9f9;*/
+            background-color: lighten( $bg-color-option, 15% );
             border: 1px solid #c2c2c2;
             position: relative;
             border-radius: 25px;
@@ -199,14 +204,15 @@ section.plan {
             .circle {
                width: 50px;
                height: 50px;
-               border:1px solid #c2c2c2;
+               /*border:1px solid #c2c2c2;*/
                border-radius: 50%;
                position: absolute;
                left: 0;
                top: -30px;
                right: 0;
                margin: auto;
-               background-color: #fff;
+               /*background-color: #fff;*/
+               background-color: #272727;
                
                 .dot {
                     width: 25px;
@@ -278,10 +284,13 @@ section.plan {
                 background-color: #f1f1f1;
                 list-style-type: none;
                 line-height: 50px;
-            }
-
-            .plan-list li:nth-of-type(2n + 1) {
-                background-color: #e4e4e4;
+                
+                li {
+                    
+                    &:nth-of-type(2n + 1) {
+                        background-color: #e4e4e4;
+                    }
+                }
             }
 
             .option-button {
@@ -334,12 +343,19 @@ section.plan {
 
                 .plan-list {
                     background-color: #e4e4e4;
+                    
+                    li {
+                        
+                        &:nth-of-type(2n + 1) {
+                            background-color: #f1f1f1 !important;
+                            color: #acacac;
+                        }
+                    }
                 }
 
-                .plan-list li:nth-of-type(2n + 1) {
-                    background-color: #f1f1f1 !important;
-                    color: #acacac;
-                }
+/*                .plan-list li:nth-of-type(2n + 1) {
+
+                }*/
 
                 .option-button {
                     background-color: #000000;
@@ -356,35 +372,30 @@ section.plan {
     }
 }
 
+.btns {
+    
+    margin: $primary-margin-top-bottom;
+    text-align: center;
+    
+    .btn-scroll-up {
+        padding: 8px 4px 0px;
+        height: 36px;
+        
+        i { 
+            border: solid $orange;
+            border-width: 0 8px 8px 0;
+            display: inline-block;
+            padding: 8px; 
+        }
+    }
+}
+
+
 .test {
     background: aliceblue;
     
-    i {  
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px; 
-    }
     
-    .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
+ 
     
     
 }
