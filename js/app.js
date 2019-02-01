@@ -22,4 +22,13 @@ $(document).ready(function() {
     $scrollUp.click(function() {
         $body.stop().animate({scrollTop:0}, "500");
     });
+    
+    var $menu = $("section#first-view .header-content>a");
+        
+    $menu.on("click", function() {
+        event.preventDefault();
+        var jumpTo = $(this).attr("href");
+        var position = $(jumpTo).position().top;
+        $body.animate({scrollTop: position}, 1000);
+    });
 });

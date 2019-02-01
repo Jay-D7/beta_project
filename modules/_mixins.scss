@@ -56,6 +56,33 @@
     }
 }
 
+@-moz-keyframes swing {
+    15% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-2px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 /*pulse*/
 
 @keyframes pound {
@@ -82,6 +109,55 @@
     }
 }
 
+@-moz-keyframes pound {
+    from { 
+        transform: none; 
+    } 
+    50% {
+        transform: scale(1.4); 
+    } 
+    to {
+        transform: none; 
+    }
+}
+
+//Fade
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein {  
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein {   
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 //Text-shadow
 @mixin box-shadow($border-gold) {
