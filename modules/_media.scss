@@ -10,26 +10,178 @@
 // Small devices (landscape phones, 576px and up)
 /*@media (min-width: 576px) { ... }*/
 
-// Medium devices (tablets, 768px and up)
-/*@media (min-width: 768px) { ... }*/
+// Medium devices (tablets, 768px and down)
+@media (max-width: 768px) {
+    header {
+        
+        nav.menu {
+            display: block $mustBe;
+            margin: $zero $mustBe;
+        }
+        
+        .menu {
+            transition: all .25s;
+            position: fixed;
+            top: 10px;
+            left: 9px;
+            height: 36px;
+            width: 36px;
+            z-index: 1;
+            cursor: pointer;
+            
+            .logo {
+
+            }
+             
+            .bar-container {
+                position: fixed;
+                top: 44px;
+                right: 25px;
+                padding: 18px 18px;
+                background-color: rgba(58, 58, 58, 0.68);
+                border: 2px solid #333841;
+
+                .bar {
+                    content: "";
+                    position: absolute;
+                    left: 3px;
+                    /* bottom: auto; */
+                    top: 16px;
+                    height: 4px;
+                    width: 30px;
+                    background-color: rgba(255, 255, 255, 0.95);
+                    border-radius: 15px;
+                    transition: all .25s;
+
+                    &:before {
+                        @extend .bar;
+                        top: -8px;
+                        left: 0;
+                    }
+
+                    &:after {
+                        @extend .bar;
+                        top: 8px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        
+        ul {
+            display: none;
+        }
+            
+            .menu-expanded {
+            transition: all .25s;
+            text-align: center;
+            line-height: 72px;
+            height: 100%;
+            width: 100%;
+            border-radius: 0px;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 41, 47, 0.83);
+            overflow: auto;
+            overflow-x: hidden;
+            -ms-overflow-x: hidden;
+
+        .bar-container {
+            .bar {
+                transition: all .25s;
+                background-color: transparent;
+
+                &:before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+
+                &:after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            }
+        }
+        
+        .nav-logo {
+            background-image: url(../images/logo.png);
+            background-repeat: no-repeat;
+            height: 120px;
+            width: 100px;
+            background-size: contain;
+            margin: 0 auto;
+            margin-bottom: 3vh;
+        }
+
+        ul {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+
+            .item {
+                display: block;
+
+                a {
+                    font-size: $item-expand;
+                    text-transform: uppercase;
+                    transition: all .15s;
+                }
+            }
+        }
+    }
+        
+        
+        
+       
+    }
+}
+
+            
 
 // Large devices (desktops, 992px and up)
 /*@media (min-width: 992px) { ... }*/
 
 // Extra large devices (large desktops, 1200px and up)
 /*@media (min-width: 1200px) { ... }*/
-@media all and (max-width: 800px) {
+/*@media all and (max-width: 800px) {
 header {
   nav.menu {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+     When on medium sized screens, we center it by evenly distributing empty space around items 
     justify-content: space-around !important;
   }
 }
-}
-
+}*/
+/*
 @media all and (max-width: 500px) {
   nav.menu {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+     When on medium sized screens, we center it by evenly distributing empty space around items 
     flex-direction: column !important;
   }
-}
+}*/
+
+
+/*
+                li {
+                    display: inline-block;
+                    padding: 0 10px;
+                    font-size: 15px;
+
+                    &:hover{
+                        animation: swing 1s ease;
+                        -webkit-animation: swing 1s ease; 
+                        animation-iteration-count: 0.5;
+                        -webkit-animation-iteration-count: 0.5;
+                    }
+
+                    a {
+                        color: $orange;
+                        transition: all 0.5s; 
+                        font-weight: 600;
+
+                        &:hover {
+                            text-decoration: none; 
+                            transition: all 0.5s; 
+                            color: darken($orange, 30%);
+                        }
+                    }  
+                }*/

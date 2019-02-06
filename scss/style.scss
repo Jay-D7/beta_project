@@ -40,31 +40,30 @@ header {
     position: fixed;
     z-index: 999999;
     width: 100%;
-    background-color: #000000;
+    background-color: #0000009c;
     
     .logo {
        float: left;
     }
 
     nav.menu {
-        /*float: right;*/
         margin: 45px 0;
-        
-            display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
 
         ul {
             li {
                 display: inline-block;
                 padding: 0 10px;
                 font-size: 15px;
+                list-style-type: none;
                 
                 &:hover{
                     animation: swing 1s ease;
                     -webkit-animation: swing 1s ease; 
                     animation-iteration-count: 0.5;
-                    -webkit-animation-iteration-count: 0.5;
+                    -webkit-animation-iteration-count: 0.5; 
                 }
                 
                 a {
@@ -75,6 +74,7 @@ header {
                     &:hover {
                         text-decoration: none; 
                         transition: all 0.5s; 
+                        color: darken($orange, 30%);
                     }
                 }  
            }
@@ -120,7 +120,7 @@ section#first-view {
                 margin: $primary-margin-top;
                 width: 200px;    
                 max-width: 80%;
-                padding: 12px 0;
+                padding: 16px 0;
                 font-size: 14px;
                 font-weight: 600;
                 background-color: $orange;
@@ -130,7 +130,7 @@ section#first-view {
             
                 &:hover {
                     background-color: darken( $orange, 15% );
-                    transition: all 0.5s;
+                    transition: all 0.5s; 
                 }
             } 
         }
@@ -279,15 +279,15 @@ section#plan {
                 padding: 0;
                 font-size: 22px;
                 text-align: center;
-                color: #747474;
-                background-color: #f1f1f1;
+                color: #acacac;
+                background-color: #676767;
                 list-style-type: none;
                 line-height: 50px;
                 
                 li {
                     
                     &:nth-of-type(2n + 1) {
-                        background-color: #e4e4e4;
+                        background-color: $second;
                     }
                 }
             }
@@ -318,7 +318,6 @@ section#plan {
                 transition: background-color linear 0.5s;
                 
                 .option-h1 {
-                    /*background-color: $orange;*/
                     color: #FFFFFF;
                     transition: background-color linear 2s;
                 }
@@ -341,20 +340,16 @@ section#plan {
                 }
 
                 .plan-list {
-                    background-color: #e4e4e4;
+                    background-color: $second;
+                    color: $basic;
                     
                     li {
                         
                         &:nth-of-type(2n + 1) {
-                            background-color: #f1f1f1 !important;
-                            color: #acacac;
+                            background-color: #676767 !important;
                         }
                     }
                 }
-
-/*                .plan-list li:nth-of-type(2n + 1) {
-
-                }*/
 
                 .option-button {
                     background-color: #000000;
@@ -389,23 +384,7 @@ section#gallery {
 
 
 
-.btns {
-    
-    margin: $primary-margin-top-bottom;
-    text-align: center;
-    
-    .btn-scroll-up {
-        padding: 8px 4px 0px;
-        height: 36px;
-        
-        i { 
-            border: solid $orange;
-            border-width: 0 8px 8px 0;
-            display: inline-block;
-            padding: 8px; 
-        }
-    }
-}
+  
 
 
 .test {

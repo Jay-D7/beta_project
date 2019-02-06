@@ -1,7 +1,7 @@
 
 
 
-//Arrows
+    //Arrows
 
 .right {
     transform: rotate(-45deg);
@@ -23,23 +23,55 @@
     -webkit-transform: rotate(45deg);
 }
 
-//Fade
+    //Fade
 
-#test {
+#fading {
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
 }
 
+    //Go Top
 
-
-
-/*    <div class="test">
-        <h2>CSS Arrows</h2>
-        <p>Right arrow: <i class="right"></i></p>
-        <p>Left arrow: <i class="left"></i></p>
-        <p>Up arrow: <i class="up"></i></p>
-        <p>Down arrow: <i class="down"></i></p> 
-    </div>*/
+#toTopPage {
+    margin: $primary-margin-top-bottom;
+    text-align: center;
+    
+    .scroll-to-top {
+        width: 64px;
+        height: 64px;
+        background: $orange;
+        border-radius: 1px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        text-decoration: none;
+        opacity: 0.5;
+        visibility: visible;
+        transition: 0.2s;
+        z-index: 2;
+            
+        &:hover {
+            background: $orange;
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        &:before {
+            position: absolute;
+            bottom: 0;
+            content: "\f106";
+            color: #fff;
+            font-family: "FontAwesome";
+            font-size: 5rem;
+        }
+    }
+}
 
