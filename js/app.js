@@ -1,46 +1,23 @@
-console.log("Check log");
+console.log("Checking logs");
 
-console.log(4 + 4);
+console.log(4 + 4/2 * 7);
 
-//var $ = require('jquery');
-//window.$ = $;
-//require('bootstrap');
-//require('bootstrap');
+
+
 
 //PURE JS to show how use variables getElement by ID and Class
 
+//        Menu Hamburger show/hide
+document.addEventListener("DOMContentLoaded", function(){
+    var bar= document.getElementsByClassName("menu-collapsed")[0];
 
-//document.addEventListener("DOMContentLoaded", function(){
-//    console.log("Działa");
-////    var bar = document.getElementById('#first-view');
-//});
+    bar.addEventListener("click", function() {
+       console.log("menu-collapsed");
+       document.getElementsByClassName('menu-collapsed')[0].classList.toggle('menu-expanded');
+    });
 
-//document.addEventListener("DOMContentLoaded", function(){
-////    Wywołanie buttona
-//    var bar = document.querySelector("menu-collapsed");
-//    
-////    dodajemy event listener na zdarzenia "click"
-//    button.addEventListener("click" ,function() {
-//       console.log("Hura działa!!!");
-//    });
-//});
 
-//document.addEventListener("DOMContentLoaded", function(){
-////    var bar = document.getElementsByClassName('menu-collapsed');
-    
-//    document.addEventListener("click" ,function() {
-//    var bar = document.getElementsByClassName('menu-collapsed');
-//       bar.classList.toggle("menu-expanded");
-//    });
-////});
-
-//function test() {
-//    
-//}
-//function myFunction("click",) {
-//    var element = document.getElementByClassName('menu-collapsed');
-//    element.classList.toggle("mystyle");
-//}
+});
 
 
 $(document).ready(function() {
@@ -49,13 +26,13 @@ $(document).ready(function() {
 //    Global variables
     var $body = $("html, body");
     var $scrollUp = $('#toTopPage');
-    var $bar = $(".menu-collapsed");
+//    var $bar = $(".menu-collapsed");
         
         
 //        Menu Hamburger show/hide
-    $bar.click(function() {
-        $(this).toggleClass("menu-expanded");
-    });
+//    $bar.click(function() {
+//        $(this).toggleClass("menu-expanded");
+//    });
     
     
     //scrolling to the top of page after refresh website
