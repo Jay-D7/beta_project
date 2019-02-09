@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_form.css">
+</head>
+
+<body>
+    
+    <?php
+echo "Hello World!";?>
+   <form action="/send" method="post">
+        <div>
+            <label for="name">Imię: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+            <label for="surname">Nazwisko: </label>
+            <input type="text" name="surname" id="surname" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="phone">Telefon: </label>
+            <input type="number" name="phone" id="phone" required>
+        </div>
+
+        <div>
+            <label for="city">Wybierz miasto: </label>
+            <select name="city" id="city">
+                <option value="warszawa">Warszawa</option>
+                <option value="krakow">Kraków</option>
+                <option value="gdansk">Gdańsk</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label for="gender">Wybierz płeć: </label>
+
+
+            <input type="radio" name="gender" value="male" id="male" checked> Mężczyzna
+            <input type="radio" name="gender" value="female" id="female"> Kobieta
+            <input type="radio" name="gender" value="other" id="other"> Inna
+        </div>
+
+        <div>
+            <label for="message">Wiadomość: </label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tutaj wpisz wiadomość"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="agreement" required>
+            <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" />
+            <button>
+              <a class="button" href="index.html" role="button">Back</a>
+            </button>
+        </div>
+
+    </form>
+    
+    
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

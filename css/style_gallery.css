@@ -1,0 +1,275 @@
+body {
+    font-family: 'latoblack';
+    color: #ffffff;
+    margin: 30px 50px 200px 50px;
+}
+
+.header {
+    background-color: #008aff;
+    text-align: right;
+    padding: 0 40px 0 0;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+.header h2 {
+    font-size: 27px;
+    vertical-align: middle;
+    line-height: 46px;
+}
+
+.left {
+    padding-left: 0;
+}
+
+.team-1, .presentative {
+    height: 486px;
+    max-width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-1 {
+    background: url("../images/images_gallery/12.jpg");
+}
+
+.team-1 h2 {
+    font-size: 21px;
+    padding-top: 60px;
+    padding-left: 90px;
+}
+
+.team-1 p {
+    font-family: 'latoregular';
+    padding-right: 35%;
+    padding-left: 90px;
+}
+
+.team-1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.presentative {
+    background: url("../images/images_gallery/Nissan-Gtr-1920x1200.jpg");
+}
+
+.signature {
+    background: url("../images/images_gallery/111.jpg");
+    height: 432px;
+    max-width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.watch, .talking, .two, .class, .training, .team-2, .persons, .stickers, .team-3 {
+    height: 216px;
+    max-width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.watch {
+    background: url("../images/images_gallery/14.jpg"); 
+}
+
+.talking {
+    background: url("../images/images_gallery/15.jpg");
+}
+
+.two {
+    background: url("../images/images_gallery/PtWOk6.jpg");
+}
+
+.class {
+    background: url("../images/images_gallery/GTR_2.jpg");   
+}
+
+.training {
+    background: url("../images/images_gallery/nissan-gtr-wallpaper-hd-wallpaper-3.jpg");
+}
+
+.team-2{
+    background: url("../images/images_gallery/Nissan-Gtr-1920x1200.jpg");
+}
+
+.persons {
+    background: url("../images/images_gallery/GTR.jpg");
+}
+
+.stickers {
+    background: url("../images/images_gallery/nissan-gtr-car-1_00448027.jpg");
+}
+
+.team-3 {
+    background: url("../images/images_gallery/lexus-is-hybrid-benessere-a-360_2_foto_1340_1004.jpg");
+}
+
+.main {
+    background: url("../images/images_gallery/13.jpg");
+    height: 432px;
+    max-width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-4 {
+    background: url("../images/images_gallery/bmw-m3-csl-wallpaper-1920-1080-full-hd.jpg");
+}
+
+.certificate {
+    background: url("../images/images_gallery/GTR_3.jpg");
+}
+
+.certificate, .team-4 {
+    height: 598px;
+    max-width: 100%;
+    background-size: cover !important;
+    background-position: center !important; 
+    transition: all 0.5s ease-in-out;
+}
+
+.team-1:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.presentative:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.signature:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.watch:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.talking:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.two:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.class:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.training:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-2:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.persons:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.stickers:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-3:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.main:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.main:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.team-4:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.certificate:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.presentative, .signature, .watch, .talking, .two, .class, .training, .team-2, .persons, .stickers, .team-3, .main, .team-4, .certificate {
+    
+}
+
+.top {
+    margin-top: 100px;
+}
+
+.button {
+    padding: 33px 134px;
+    background-color: #008aff;
+    color: inherit;
+    text-transform: uppercase;
+    font-family: 'latoregular';
+    letter-spacing: 2px;
+    font-weight: 800;
+    position: relative;
+    border-color: #008aff;
+    transition: all 0.5s ease-out;
+}
+
+.button:hover {
+    background-color: #008aff;
+    color: inherit;
+    border-color: #008aff;
+    transition: all 0.5s ease-out;
+    color: #00e5ff;
+}
+
+.button img {
+    position: absolute;
+    right: 76px;
+}
+
+
+
+
+
+
+        /* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    .signature {
+        height: 432px;
+    }
+    
+    .team-1 p {
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: center;
+    }
+    
+    .team-1 h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+

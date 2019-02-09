@@ -156,14 +156,33 @@ section#little-history {
     }
         
     .history-image {
-        display: inline-block;
+        display: inline-grid;
         margin: 10px; /*Build*/
 
         img[data-history] {
             display: inline-block;
             border-radius: 15px;
         }
+        
+        .history-image-content {
+            max-width: 400px;
+            
+            h3 {
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    color: $basic;
+                }
+            }
+        }
     } 
+}
+
+section#movie {
+    padding-top: 4px;
+    @include box-shadow($border-gold);
 }
 
 section#plan {
@@ -366,7 +385,54 @@ section#plan {
     }
 }
 
-section#gallery {
+section#map {
+    padding-top: 4px;
+    @include box-shadow($border-gold);
+    
+    #map-canvas {
+        height: 100%;
+        width: 100%;
+        height: 550px;
+        position: relative;
+        outline: none; 
+    }
+    
+    #location {
+        padding: $secondary-padding-top;
+        color: $basic;
+        text-align: center;
+    }
+}
+
+footer {
+    padding: 30px 50px;
+    
+    #footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: baseline;
+    
+        .copy {
+            margin: 27px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.6);
+            float: left;
+        }
+    
+        ul {
+            float: right;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+/*section#gallery {
     padding: $open-section-padding;
     text-align: center;
     @include box-shadow($border-gold);
@@ -380,7 +446,7 @@ section#gallery {
             color: $basic;
         }
     }
-}
+}*/
 
 
 

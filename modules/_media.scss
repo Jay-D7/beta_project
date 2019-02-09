@@ -72,7 +72,7 @@
             display: none;
         }
             
-            .menu-expanded {
+        .menu-expanded {
             transition: all .25s;
             text-align: center;
             line-height: 72px;
@@ -86,53 +86,49 @@
             overflow-x: hidden;
             -ms-overflow-x: hidden;
 
-        .bar-container {
-            .bar {
-                transition: all .25s;
-                background-color: transparent;
+            .bar-container {
+                .bar {
+                    transition: all .25s;
+                    background-color: transparent;
 
-                &:before {
-                    transform: rotate(45deg);
-                    top: 0;
-                }
+                    &:before {
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
 
-                &:after {
-                    transform: rotate(-45deg);
-                    top: 0;
+                    &:after {
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
                 }
             }
-        }
-        
-        .nav-logo {
-            background-image: url(../images/logo.png);
-            background-repeat: no-repeat;
-            height: 120px;
-            width: 100px;
-            background-size: contain;
-            margin: 0 auto;
-            margin-bottom: 3vh;
-        }
 
-        ul {
-            display: block;
-            list-style-type: none;
-            padding: 0;
+            .nav-logo {
+                background-image: url(../images/logo.png);
+                background-repeat: no-repeat;
+                height: 120px;
+                width: 100px;
+                background-size: contain;
+                margin: 0 auto;
+                margin-bottom: 3vh;
+            }
 
-            .item {
+            ul {
                 display: block;
+                list-style-type: none;
+                padding: 0;
 
-                a {
-                    font-size: $item-expand;
-                    text-transform: uppercase;
-                    transition: all .15s;
+                .item {
+                    display: block;
+
+                    a {
+                        font-size: $item-expand;
+                        text-transform: uppercase;
+                        transition: all .15s;
+                    }
                 }
             }
-        }
-    }
-        
-        
-        
-       
+        } 
     }
 }
 
@@ -185,3 +181,10 @@ header {
                         }
                     }  
                 }*/
+
+/*section little history for small
+    display: flex;
+    margin: 10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;*/

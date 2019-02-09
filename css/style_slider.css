@@ -1,0 +1,13 @@
+.slider ul{
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+    width: 400px;
+    height: 200px;
+}
+
+.slider .visible{
+    display: inline-block;
+}

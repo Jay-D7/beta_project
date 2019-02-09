@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="#">
- 
-    <!-- endbuild -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
      <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- build:css dist/combined.css -->
       <!-- CSS -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>   
-
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places,weather"></script>
 </head>
 <body>
     <header>
@@ -32,12 +32,12 @@
                     </div> 
                    <div class="nav-logo img-responsive"></div>
                     <ul>
-                        <li class="item"><a href="#Discover">Discover</a></li>
+                        <li class="item"><a href="#little-history">History</a></li>
                         <li class="item"><a href="#Company">Company</a></li>
-                        <li class="item"><a href="#About Us">About</a></li>
-                        <li class="item"><a href="#Gallery">Gallery</a></li>
-                        <li class="item"><a class="modal-open" href="#Options">Options</a></li>
-                        <li class="item"><a class="modal-open" href="#Contact">Contact</a></li>
+                        <li class="item"><a href="#movie">About</a></li>
+                        <li class="item"><a class="gallery-1" href="gallery.html">Gallery</a></li>
+                        <li class="item"><a class="" href="#plan">Options</a></li>
+                        <li class="item"><a class="form" href="form.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,8 +50,8 @@
                 <h1><i>Nissan</i></h1>
                 <p>the history of the car that conquered japan and the world</p>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <a href="#learn-more" class=""><button>Learn More</button></a>
-                <a href="#about-us" class=""><button>About Us</button></a>
+                <a href="#plan" class=""><button>Learn More</button></a>
+                <a href="slider.html" class="slidershow"><button>About Us</button></a>
             </div>
           </div>
         </div>
@@ -68,19 +68,45 @@
         <div class="container-fluid">
             <div class="history-image">
                 <img src="images/car_1.jpg" class="img-responsive" data-history="image-1" alt="innovative technology" width="400" height="225"/>
-                <h3>Content</h3>
+                <div class="history-image-content">
+                    <h3>INNOVATIVE TECHNOLOGY</h3>
+                    <ul>
+                        <li>Brand new 8-inch touchscreen multi-function display</li>
+                        <li>Latest generation NissanConnect satellite navigation and entertainment system*</li>
+                        <li>DAB digital radio and smartphone app integration included</li>
+                    </ul>
+                </div>
+
             </div>
             <div class="history-image">
                 <img src="images/car_2.jpg" class="img-responsive" data-history="image-2" alt="control" width="400" height="225"/>
-                <h3>Content</h3>
+                <div class="history-image-content">
+                    <h3>PREMIUM COMFORT</h3>
+                    <ul>
+                        <li>Redesigned interior with hand-crafted materials</li>
+                        <li>Prestige Leather seats and interior available in Black, Tan, Ivory or Red surround you in comfort and luxury</li>
+                        <li>Recaro® sports seats and interior designed with performance in mind</li>
+                    </ul>
+                </div>
             </div>
             <div class="history-image">
                 <img src="images/car_3.jpg" class="img-responsive" data-history="image-3" alt="track taming performance" width="400" height="225"/>
-                <h3>Content</h3>
+                <div class="history-image-content">
+                    <h3>TRACK-TAMING PERFORMANCE</h3>
+                    <ul>
+                        <li>Horsepower and torque increased – 570PS and 637Nm of torque</li>
+                        <li>New titanium exhaust with open valve system</li>
+                        <li>Enhanced aerodynamics with greater downforce</li>
+                    </ul>
+                </div>
             </div> 
         </div>
     </section>
-    <!--Hide section on Mobile--> 
+    <section id="movie">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WNeLUngb-Xg?start=45" allowfullscreen></iframe>
+        </div>
+    </section>
     <section id="plan">
         <div class="container">
             <div class="row">
@@ -94,7 +120,7 @@
                             </div>
                             <h1 class="option-h1">basic plan</h1>
                             <div class="price">
-                                <p class="amount">8<sub>5</sub><sup>99</sup></p>
+                                <p class="amount"><sub>85</sub><sup>99</sup></p>
                                 <p class="month">pln/msc</p>
                             </div>
                             <div>
@@ -102,7 +128,7 @@
                                     <li>Purchase + Delivery</li>
                                     <li>Service</li>
                                 </ul>
-                                <a href="" target="_blank"><button class="option-button">Choose</button></a>
+                                <a href="#" target="_blank"><button class="option-button">Choose</button></a>
                             </div>
                         </div>
                         <div class="option second">
@@ -120,7 +146,7 @@
                                     <li>Service</li>
                                     <li>Gwaranty 5 years</li>
                                 </ul>
-                                <a href="" target="_blank"><button class="option-button">Choose</button></a>
+                                <a href="#" target="_blank"><button class="option-button">Choose</button></a>
                             </div>
                         </div>
                         <div class="option third">
@@ -139,7 +165,7 @@
                                     <li>Gwaranty 5 years</li>
                                     <li>Tips from best licensed drivers </li>
                                 </ul>
-                                <a href="" target="_blank"><button class="option-button">Choose</button></a>
+                                <a href="#" target="_blank"><button class="option-button">Choose</button></a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +173,43 @@
             </div>
         </div>
     </section>
-    <section id="gallery">
+    <section id="map">
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <div id="map-canvas">
+                      Google Map will go here!.
+                    </div>
+                    <div id="location">
+                        Your location will go here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="footer-content">
+                        <p class="copy">Copyright XXXX | All Rights Reserved. - Nissan_Beta_worksite</p>
+                        <ul>
+                            <li><a href="#"><img src="images/flickr.png" alt="flickr"></a></li>
+                            <li><a href="#"><img src="images/vimeo.png" alt="vimeo"></a></li>
+                            <li><a href="#"><img src="images/pinterest.png" alt="pinterest"></a></li>
+                            <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!--Extra feature for future building page-->
+    
+    
+<!--    <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -204,8 +266,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="abous-us">
+    </section>-->
+
+<!--
+    <section id="about-us" class="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -227,7 +291,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
  
 
     
@@ -248,5 +312,7 @@
       <!--JS-->
     <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA092aNUpOFwdaWHCo9tYL064J5NswfkPY&callback=initMap"></script>
 </body>
 </html>
