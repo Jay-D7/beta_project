@@ -4,11 +4,14 @@
     }
 }
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-/*@media (min-width: 576px) { ... }*/
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+    section#plan {
+        display: none;
+    }
+}
 
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px) {
@@ -129,6 +132,36 @@
                 }
             }
         } 
+    }
+    
+    section#first-view {
+        h1 {
+            font-size: 4.5rem $mustBe;
+        }
+        
+        p {
+            font-size: 1.5rem $mustBe;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+@media (max-width: 576px) {
+    section#first-view {
+        h1 {
+            font-size: 4rem $mustBe;
+        }
+        
+        p {
+            margin: 15px 0 0 0 $mustBe;
+        }
+        
+        a {
+            button {
+                margin: 30px 0 0 0 $mustBe;
+            }
+        }
     }
 }
 

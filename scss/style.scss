@@ -10,6 +10,7 @@ html {
 
 body {
     background-color: $bg-color;
+    font-family: 'latoregular';
 }
 
 h1, h3, p  {
@@ -102,6 +103,8 @@ section#first-view {
         
         h1 {
             font-size: $big-title;
+            text-transform: uppercase;
+            font-weight: 800;
         }
 
         p {
@@ -193,6 +196,7 @@ section#plan {
     
     h1 {
         font-size: $small-title;
+        text-transform: uppercase;
     }
     
     p {
@@ -430,6 +434,73 @@ footer {
         }
     }
 
+}
+
+#section-1-slider {
+  display: none;
+  background: linear-gradient(to bottom, #fafafa 0%, #f6f6f6 47%, #d1d0d8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d1d0d8', GradientType=0 );
+  /* IE6-9 */
+  color: #000;
+}
+
+#next {
+  color: #24baa0;
+  font-size: 6em;
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#prev {
+  content: "<";
+  color: #24baa0;
+  font-size: 6em;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.slider div {
+  display: inline-block;
+  align-content: center;
+  display: none;
+}
+
+.slider .section-1-car-img {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider .section-1-car-img img {
+  /*padding-top: 5%;*/
+  /*vertical-align: middle;*/
+  display: inline-block;
+  /*width: 47%;*/
+  /*float: left;*/
+}
+
+.slider .center-img{
+    /*display: block;*/
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 /*section#gallery {
